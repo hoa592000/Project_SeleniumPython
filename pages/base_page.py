@@ -2,8 +2,10 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium import webdriver
 
-
+PATH = "chromedriver.exe"
+driver = webdriver.Chrome(PATH)
 class BasePage(object):
     def __init__(self, driver, base_url='https://the-internet.herokuapp.com/'):
         self.base_url = base_url

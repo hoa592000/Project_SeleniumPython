@@ -12,8 +12,7 @@ class TestAlertPage(BaseTest):
         page = MainPage(self.driver)
         alert_page = page.click_alert_page()
 
-        self.assertEqual(alert_page.get_url(),
-                         "https://the-internet.herokuapp.com/javascript_alerts")
+        self.assertEqual(alert_page.get_url(), "https://the-internet.herokuapp.com/javascript_alerts")
 
     def test_alert_button(self):
         print("\n" + str(test_cases(2)))
